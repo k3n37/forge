@@ -1,4 +1,4 @@
-# service-template
+# forge
 
 Golden-path starter for production-minded TypeScript services.
 
@@ -8,9 +8,9 @@ Provide a clean service scaffold with health checks, config loading, and clear s
 
 ## Role in the ecosystem
 
-- Template source for `master-platform` and `saas-platform`
-- Neighbor to `programming-patterns`
-- Input to `internal-developer-platform`
+- Template source for `orbit` and `saas-platform`
+- Neighbor to `craft`
+- Input to `relay`
 
 ## Status
 
@@ -24,7 +24,7 @@ Starter template with one minimal executable service layout.
 ## Structure
 
 ```text
-service-template/
+forge/
 ├── src/
 │   ├── config.ts
 │   ├── health.ts
@@ -47,9 +47,9 @@ node dist/index.js
 
 ## Related repositories
 
-- `programming-patterns`
-- `internal-developer-platform`
-- `master-platform`
+- `craft`
+- `relay`
+- `orbit`
 
 ## Future direction
 
