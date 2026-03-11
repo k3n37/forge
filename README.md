@@ -8,7 +8,7 @@ Provide a clean service scaffold with health checks, config loading, and clear s
 
 ## Role in the ecosystem
 
-- Template source for `orbit` and `saas-platform`
+- Template source for `orbit` and `summit`
 - Neighbor to `craft`
 - Input to `relay`
 
