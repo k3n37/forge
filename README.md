@@ -1,56 +1,34 @@
 # forge
 
-Golden-path starter for production-minded TypeScript services.
-
 ## Purpose
+Implement core backend services, request handling, configuration, and business logic in a clean service shape.
 
-Provide a clean service scaffold with health checks, config loading, and clear structure so new platform services start from a consistent baseline.
+## Why it matters
+When backend foundations are weak, business rules leak across the system and reliability problems become harder to isolate.
 
-## Role in the ecosystem
+## Scope
+This repo focuses on service structure, handlers, health checks, and runtime boundaries. It does not try to cover every backend pattern at once.
 
-- Template source for `orbit` and `summit`
-- Neighbor to `craft`
-- Input to `relay`
+## System Role
+`forge` is the backend implementation layer for the ecosystem. It turns architecture into executable services that other layers can depend on.
 
-## Status
+## System Connections
+- Depends on: `atlas` for boundaries and `vault` for persistence decisions.
+- Feeds into: `summit`, `relay`, `orbit`.
+- Interacts with: `vault`, `flux`, `signal`.
 
-Starter template with one minimal executable service layout.
+## Core Concepts
+- request handling
+- service boundaries
+- business rules
+- configuration loading
+- health checks
 
-## Tech stack
+## Minimal Artifact
+`src/index.ts`, `src/config.ts`, and `src/health.ts` form the starter service skeleton.
 
-- TypeScript
-- Node.js
+## Notes
+The goal is a credible baseline for small services: readable structure, predictable startup, and clear extension points.
 
-## Structure
-
-```text
-forge/
-├── src/
-│   ├── config.ts
-│   ├── health.ts
-│   └── index.ts
-├── .editorconfig
-├── .gitignore
-├── README.md
-├── ROADMAP.md
-├── package.json
-└── tsconfig.json
-```
-
-## Getting started
-
-```bash
-npm install
-npm run build
-node dist/index.js
-```
-
-## Related repositories
-
-- `craft`
-- `relay`
-- `orbit`
-
-## Future direction
-
-Keep the template small and high-signal. It should be copied and adapted, not worshipped.
+## Next Steps
+Add middleware, persistence adapters, and contract-testing hooks without turning the repo into a framework.
